@@ -1,1 +1,1 @@
-"Project for financial research" 
+Project for financial research at the university 
