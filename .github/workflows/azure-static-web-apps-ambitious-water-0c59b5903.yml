@@ -32,7 +32,9 @@ jobs:
           output_location: "build" # Built app content directory - optional
           app_build_command: 'npm run build-ui-prod'
           api_build_command: 'npm run build-api-prod'
+          skip_app_build: true
           ###### End of Repository/Build Configurations ######
+      - run: npm run start
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
